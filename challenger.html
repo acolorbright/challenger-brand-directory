@@ -135,32 +135,6 @@ a{color:inherit}
   line-height:1.65;
   margin-top:.65rem;
 }
-.framework-grid{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:0;
-  border-top:1px solid var(--line);
-  margin-top:.75rem;
-  max-width:58ch;
-}
-.framework-card{
-  padding:.85rem 0;
-  border-bottom:1px solid var(--line);
-  background:transparent;
-}
-.framework-card:nth-child(odd){padding-right:1rem}
-.framework-card:nth-child(even){padding-left:1rem}
-.framework-card strong{
-  display:block;
-  font-size:15px;
-  font-weight:400;
-  margin-bottom:.2rem;
-}
-.framework-card span{
-  font-size:14px;
-  color:var(--muted);
-  line-height:1.5;
-}
 
 .workspace{
   display:grid;
@@ -349,8 +323,6 @@ a{color:inherit}
 @media(max-width:640px){
   .main{padding:1rem 1rem 0}
   .hero-copy h2{max-width:none}
-  .framework-grid{grid-template-columns:1fr}
-  .framework-card:nth-child(odd),.framework-card:nth-child(even){padding-left:0;padding-right:0}
   .results{padding:1.25rem 1rem 2rem;border-radius:22px}
   .matrix{grid-template-columns:1fr}
   .matrix::before,.matrix::after{display:none}
@@ -369,24 +341,6 @@ a{color:inherit}
           <p>A living directory of challenger brand concepts across a wide range of markets. Browse the norms each category takes for granted, then compare four different ways a challenger brand could respond.</p>
           <p>We don't have a sweet spot for an industry but for a certain type of organization: challengers. Obsessed with challenger brands, we developed a <a href="https://www.acolorbright.com/en/insights/challenger-brands" target="_blank">framework</a> to identify potential niches in markets.</p>
           <p>The idea is simple: identify the norms in an industry, then imagine how a brand could iterate on or redefine what matters and push or counter what's considered good.</p>
-        </div>
-        <div class="framework-grid">
-          <div class="framework-card">
-            <strong>Misfit</strong>
-            <span>The antidote brand that rejects what the market treats as obviously right.</span>
-          </div>
-          <div class="framework-card">
-            <strong>Disruptor</strong>
-            <span>A concept that changes the rules and reframes which dimensions matter.</span>
-          </div>
-          <div class="framework-card">
-            <strong>Realkeeper</strong>
-            <span>A back-to-basics version stripped of category bloat and noise.</span>
-          </div>
-          <div class="framework-card">
-            <strong>Innovator</strong>
-            <span>The sharper operator that still plays the existing game, just better.</span>
-          </div>
         </div>
       </div>
     </div>
