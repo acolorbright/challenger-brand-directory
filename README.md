@@ -1,6 +1,6 @@
 # Challenger Brand Directory
 
-A living directory of challenger brand concepts across 40+ markets, built on the ACB Challenger Brand Framework.
+A living directory of challenger brand concepts across 50 markets, built on the ACB Challenger Brand Framework.
 
 **[→ View the live directory](https://acolorbright.github.io/challenger-brand-directory/challenger.html)**
 
@@ -30,15 +30,17 @@ Two axes define four archetypes:
 
 ---
 
-## Current markets (43)
+## Current markets (50)
+
+10 markets per category.
 
 | Category | Markets |
 |---|---|
-| Leisure & Hospitality | Burger Restaurant, Cinema, Coffee Shop, Fine Dining, Fitness Studio, Lunch Bistro, Luxury Travel, Pizzeria, Wine Bar |
+| Leisure & Hospitality | Burger Restaurant, Cinema, Coffee Shop, Fine Dining, Fitness Studio, Lunch Bistro, Luxury Travel, Pizzeria, Wine Bar, Yoga Studio |
 | Food & Beverage | Chewing Gum, Craft Beer, Hydration Drinks, Longevity Supplements, Natural Wine, Non-Alcoholic Beer, Olive Oil, Protein Bars, Soda, Tea |
-| Beauty & Home | Hair, Home Fragrance, Make-up, Men's Skincare, Nails, Niche Fragrances, Premium Skincare, Scented Candles, Sun Care, Tableware, Towels |
+| Beauty & Home | Hair Care, Home Fragrance, Make-Up, Men's Skincare, Nail Care, Niche Fragrances, Premium Skincare, Scented Candles, Sun Care, Tableware |
 | Fashion & Apparel | Activewear, Backpacks, Jewelry, Leather Goods, Men's Underwear, Running Apparel, Running Shoes, Socks, Sunglasses, Swimwear |
-| Software & Content | Accounting, Corporate Learning, CRM, HR Management, Legal Tech, Messaging, Mobile Games, Music Production, Music Streaming, Presentation, To-do List, Video Generation, Video Streaming |
+| Software & Content | Accounting, Corporate Learning, CRM, HR Management, Messaging, Music Production, Music Streaming, Presentation, To-Do List, Video Generation |
 
 ---
 
