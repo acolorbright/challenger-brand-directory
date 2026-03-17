@@ -545,8 +545,34 @@ function buildNav(){
   });
 }
 
+function getInitialMarket(){
+  const params=new URLSearchParams(window.location.search);
+  const market=params.get('market');
+  if(market && DEMOS[market]) return market;
+
+  const hash=window.location.hash.replace(/^#/,'');
+  if(hash && DEMOS[hash]) return hash;
+
+  return CATEGORIES[0].markets[0];
+}
+
+function updateUrl(key,mode='push'){
+  const url=new URL(window.location.href);
+  url.searchParams.set('market',key);
+  url.hash=key;
+
+  if(mode==='replace'){
+    window.history.replaceState({market:key},'',url);
+    return;
+  }
+
+  const currentMarket=new URLSearchParams(window.location.search).get('market');
+  if(currentMarket===key && window.location.hash===`#${key}`) return;
+  window.history.pushState({market:key},'',url);
+}
+
 function render(key,options={}){
-  const {scroll=true}=options;
+  const {scroll=true,updateHistory='push'}=options;
   const d=DEMOS[key]; if(!d) return;
   const activeCategory=CATEGORIES.find(cat=>cat.markets.includes(key));
   document.querySelectorAll('.category-block').forEach(block=>{
@@ -571,13 +597,20 @@ function render(key,options={}){
   }).join('');
   const results=document.getElementById('results');
   results.style.display='block';
+  if(updateHistory){
+    updateUrl(key,updateHistory);
+  }
   if(scroll){
     results.scrollIntoView({behavior:'smooth',block:'start'});
   }
 }
 
 buildNav();
-render(CATEGORIES[0].markets[0],{scroll:false});
+window.addEventListener('popstate',()=>{
+  render(getInitialMarket(),{scroll:false,updateHistory:false});
+});
+
+render(getInitialMarket(),{scroll:false,updateHistory:'replace'});
 </script>
 </body>
 </html>
